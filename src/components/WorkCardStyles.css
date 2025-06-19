@@ -1,0 +1,116 @@
+.project-heading{
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* controls space *between* cards */
+  justify-content: center; /* center aligns projects */
+  padding: 0;              /* ensure no left spacing */
+  margin: 0 auto;          /* center inside container */
+  max-width: 1200px;
+}
+
+.work-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.project-card{
+  background: #1a1919;
+  width: 300px;
+  margin: 0;        
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.project-card img{
+  width: 100%;
+}
+
+.project-title{
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.pro-details p{
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.pro-btns{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.pro-btns .btn{
+  padding: 0.5rem 1rem;
+}
+
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.skills-list li {
+  padding: 2px 0;
+}
+
+.modal-content h4 {
+  margin-top: 1rem;
+  color: #38bdf8;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto; /* ensures content scrolls inside modal if too big */
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 0.3s ease;
+}
+
+
+@media screen and (max-width:740px) {
+  .project-container{
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

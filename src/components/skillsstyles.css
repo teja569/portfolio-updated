@@ -1,0 +1,128 @@
+.skills-wrapper {
+  padding: 2rem;
+  background: #0f0f0f; /* deep dark background */
+  color: #f5f5f5;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-btn {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  min-height: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-btn.active {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.4), rgba(147, 51, 234, 0.4));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(147, 51, 234, 0.6);
+}
+
+.skills-display {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  padding: 1rem;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-info .icon {
+  font-size: 1.2rem;
+}
+
+.skill-info .name {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.skill-info .level {
+  font-weight: bold;
+  color: #d4d4d4;
+}
+
+.progress-bar {
+  background-color: #333;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(to right, #3b82f6, #9333ea);;
+  height: 100%;
+  transition: width 0.6s ease-in-out;
+}
+
+.skill-box,
+.sidebar-btn {
+  animation: blurFadeIn 0.8s ease forwards;
+  opacity: 0; /* initial state */
+}
+
+
+@keyframes blurFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
