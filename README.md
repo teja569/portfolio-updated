@@ -11,9 +11,6 @@ This is my personal developer portfolio website built using **React.js** and **T
 - EmailJS (for contact form)
 - FontAwesome & React Icons
 
-## 🚀 Live Demo
-
-👉 [Visit Portfolio](https://teja569.github.io/portfolio)
 
 ## 📁 Features
 
