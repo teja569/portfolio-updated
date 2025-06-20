@@ -16,7 +16,7 @@ const AboutContent = () => {
               <h3>Resume</h3>
             </div>
             <div className="flip-card-back">
-              <a href="https://drive.google.com/file/d/1tfc76Ne7yqiIJTopULcQo5UaNTClnGTv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1ITGvAI7fW9OwK-4j1LLxeAc7jJY76dD6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 View Resume
               </a>
             </div>
