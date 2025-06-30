@@ -16,29 +16,31 @@ const ProjectCardData = [
     source: "https://github.com/teja569"
   },
   {
-    imgsrc: pro2,
-    title: "Blog Website",
-    text: "A full-stack blog platform for posting and managing articles.",
-    description:
-      "Built with React, Node.js, Express, and MongoDB, this blog site allows user sign-in, post creation, and dynamic content display.",
-    skillsUsed: ["React.js", "Node.js", "Express.js", "MongoDB", "CSS"],
-    comparison:
-      "Unlike static blogging platforms, this allows full user interactivity, dynamic post creation, and real-time database updates.",
-    improvementPercent: 40,
-    source: "https://github.com/teja569"
+  imgsrc: pro2,
+  title: "Expense Tracker App",
+  text: "A cross-platform expense management app with charts, categories, and analytics.",
+  description:
+    "Built using React Native, Context API, and AsyncStorage, this app helps users track daily expenses, view summaries with charts, and categorize spending effectively.",
+  skillsUsed: ["React Native", "Expo", "Context API", "AsyncStorage", "react-native-chart-kit", "Tailwind CSS"],
+  comparison:
+    "Unlike basic expense trackers, this app includes persistent local storage, category-wise breakdowns, responsive UI, and real-time chart visualizations.",
+  improvementPercent: 65,
+  source: "https://github.com/teja569/expensetracker"
+
   },
   {
-    imgsrc: pro3,
-    title: "Portfolio Website",
-    text: "Responsive portfolio built with React and Tailwind CSS.",
-    description:
-      "A sleek personal portfolio with modular React components, animated transitions, skills filtering, and project modals.",
-    skillsUsed: ["React.js", "Tailwind CSS", "React Icons", "HTML"],
-    comparison:
-      "Compared to a plain HTML site, this offers component reuse, better UX, and animations — increasing user engagement.",
-    improvementPercent: 50,
-    source: "https://github.com/teja569"
-  }
+  imgsrc: pro3,
+  title: "Feedback System Web App",
+  text: "A role-based feedback platform with dashboards, PDF export, and markdown support.",
+  description:
+    "This full-stack app is built with React (frontend), Python FastAPI (backend), and PostgreSQL. It allows managers and employees to exchange feedback, filter by tags, and download feedback in PDF format.",
+  skillsUsed: ["React", "FastAPI", "PostgreSQL", "Python", "Tailwind CSS", "PDFKit"],
+  comparison:
+    "Compared to traditional feedback tools, this system supports anonymous peer reviews, tag filtering, and markdown-based responses, improving communication transparency and usability.",
+  improvementPercent: 70,
+  source: "https://github.com/teja569/feedback-system"
+}
+
 ];
 
 export default ProjectCardData;
