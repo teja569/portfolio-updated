@@ -6,7 +6,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364); /* new background */
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
   min-height: 100vh;
   color: white;
 }
@@ -23,10 +23,15 @@
 }
 
 .flip-card {
-  width: 220px;
-  height: 140px;
+  width: 240px;
+  height: 160px;
   perspective: 1000px;
   background: transparent;
+  transition: transform 0.3s ease;
+}
+
+.flip-card:hover {
+  transform: scale(1.05);
 }
 
 .flip-card-inner {
@@ -35,7 +40,7 @@
   height: 100%;
   text-align: center;
   transform-style: preserve-3d;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease-in-out;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -55,39 +60,41 @@
   align-items: center;
   font-weight: bold;
   font-size: 1rem;
-  color: white;
   padding: 1rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s ease;
 }
 
 .flip-card-front {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .flip-card-back {
-  background: rgba(30, 30, 30, 0.85);
+  background: rgba(18, 18, 18, 0.9);
   transform: rotateY(180deg);
 }
 
 .flip-card-back a {
   color: #00d9ff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border: 1px solid #00d9ff;
-  border-radius: 8px;
-  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s;
 }
 
 .flip-card-back a:hover {
   background: #00d9ff;
   color: #111;
+  transform: scale(1.05);
 }
 
 .icon {
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 2.2rem;
   color: #00d9ff;
 }
