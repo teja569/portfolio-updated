@@ -1,57 +1,76 @@
-.footer{
+.footer {
   width: 100%;
-  padding: 6rem 0;
-  background-color: rgba(19,19,19,0.8);
+  padding: 4rem 1.5rem;
+  background: linear-gradient(to right, #111, #1f1f1f);
+  color: #f1f1f1;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.footer-container{
+.footer-container {
   max-width: 1140px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
-.left{
-  height: 100%;
-  max-width: 100%;
+.left,
+.right {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
-.location{
+.location,
+.phone,
+.email {
   display: flex;
-  margin-bottom: 0.8rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
-.location p{
-  line-height: 30px;
+.location p,
+.phone h4,
+.email h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-.right{
-  height: 100%;
-  max-width: 100%;
+h4 {
+  font-size: 1.3rem;
+  color: #00d9ff;
+  margin-bottom: 0.7rem;
+}
+
+.right p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.social {
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.social{
+  align-items: center;
+  gap: 1.2rem;
   margin-top: 1rem;
 }
 
-h4{
-  font-size: 1.2rem;
-  padding-bottom: 0.7rem;
+.social svg {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  color: #fff;
 }
 
-p{
-  font-size: 1.2rem;
+.social svg:hover {
+  color: #00d9ff;
+  transform: scale(1.2);
 }
 
-@media screen and (max-width:640px){
-  .footer-container{
+@media screen and (max-width: 768px) {
+  .footer-container {
     grid-template-columns: 1fr;
   }
 }

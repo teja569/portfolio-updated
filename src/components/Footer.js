@@ -28,10 +28,16 @@ const Footer = () => {
           <p>I'm Teja Sai, a Full-Stack Developer skilled in React, Node.js, and modern web technologies. I enjoy building user-friendly apps and exploring AI and design. I'm looking for opportunities to learn, grow, and make an impact.
           </p>
           <div className="social">
-            <FaGithub size={20} style={{color:"#fff",marginRight:"1rem"}}/>
-            <FaLinkedin size={20} style={{color:"#fff",marginRight:"1rem"}}/>
-            <FaTwitter size={20} style={{color:"#fff",marginRight:"1rem"}}/>
-          </div>
+  <a href="https://github.com/teja569" target="_blank" rel="noopener noreferrer">
+    <FaGithub size={20} style={{color:"#fff", marginRight:"1rem"}}/>
+  </a>
+  <a href="https://www.linkedin.com/in/tejasai-polamarasetty-b3246828a/" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin size={20} style={{color:"#fff", marginRight:"1rem"}}/>
+  </a>
+  <a href="https://x.com/tejasai578?t=8sj7N7jLQZaGy4bVNjUq_w&s=09" target="_blank" rel="noopener noreferrer">
+    <FaTwitter size={20} style={{color:"#fff", marginRight:"1rem"}}/>
+  </a>
+</div>
         </div>
       </div>
     </div>
