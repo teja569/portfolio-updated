@@ -29,7 +29,7 @@ const Heroimg = () => {
         src={IntroImg} alt="IntroImg" />
       </div>
       <div className="content">
-        <p className="typing-text">{text}{showCursor && <span className="cursor">|</span>}</p>
+        <p className="typing-text">{text}{showCursor && <span className="cursor"></span>}</p>
         <h1>Full-Stack Developer</h1>
         <div className="buttons">
         <Link to="/project"
