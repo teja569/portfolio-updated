@@ -2,6 +2,8 @@ import "./AboutContentStyles.css";
 import React from "react";
 import { FaFileAlt, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks, SiCodechef } from "react-icons/si";
+import { SiHackerrank, SiCodewars } from "react-icons/si";
+
 
 const AboutContent = () => {
   return (
@@ -85,6 +87,36 @@ const AboutContent = () => {
           </div>
         </div>
       </div>
+      {/* Row 4: HackerRank & Codewars */}
+<div className="row">
+  <div className="flip-card">
+    <div className="flip-card-inner">
+      <div className="flip-card-front">
+        <div className="icon"><SiHackerrank size={30} color="#2EC866" /></div>
+        <h3>HackerRank</h3>
+      </div>
+      <div className="flip-card-back">
+        <a href="https://www.hackerrank.com/profile/21L31A04D8" target="_blank" rel="noopener noreferrer">
+          View HackerRank
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div className="flip-card">
+    <div className="flip-card-inner">
+      <div className="flip-card-front">
+        <div className="icon"><SiCodewars size={30} color="#BB432C" /></div>
+        <h3>Codewars</h3>
+      </div>
+      <div className="flip-card-back">
+        <a href="https://www.codewars.com/users/Tejasai%20Polamarasetty" target="_blank" rel="noopener noreferrer">
+          View Codewars
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   );
